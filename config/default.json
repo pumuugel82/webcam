@@ -1,0 +1,8 @@
+{
+    "pictures": {
+        "source": {
+            "directory": "/sample",
+            "refresh": 60
+        }
+    }
+}

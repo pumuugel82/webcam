@@ -1,0 +1,19 @@
+{
+    "name": "webcam",
+    "displayName": "Franklin Webcam",
+    "author": {
+        "name": "Hirte, Christop",
+        "email": "christoph.hirte@hirte.biz",
+        "url": "http://www.hirte.biz"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "config": "^3.3.3",
+        "express": "^4.17.1"
+    },
+    "description": "Backend und Frontend zur Webcam.",
+    "license": "GPLv3"
+}

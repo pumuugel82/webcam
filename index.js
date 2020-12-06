@@ -8,6 +8,8 @@
     const picSrcDir = __dirname + config.get('pictures.source.directory');
 
 
+    app.get("/", (req, res) => {res.sendFile(__dirname + "/index.html")});
+    app.get("/index.html", (req, res) => {res.sendFile(__dirname + "/index.html")});
     app.get("/api/picture/all", pictures);
     app.get("/api/picture/:name", picture);
 

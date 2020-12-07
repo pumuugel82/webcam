@@ -9,4 +9,10 @@ Erstellung einer Software (Backend und Frontend) zu einer Webcam.
 * Das Verzeichnis "pictures.source.directory" kann von node gelesen werden und liegt im gleichen Dateisystem.
 * Zur Entwicklung existieren Beispiel-Bilder unter "/sample", welches damit das FTP-Verzeichnis simuliert.
 ## Operation
-* Die Anwendung wird in einem Docker Container betrieben, der zugleich FTP-Server und ist und Node.js ausführen kann.
+* Die Anwendung wird in einem Docker Container betrieben, der zugleich FTP-Server und ist und Node.js ausführen kann. Momentan noch ohne FTP.
+
+## Usage
+
+    1. docker build --pull --rm -f Dockerfile -t webcam:latest
+
+    2. docker run --rm -it  -p 80:80/tcp webcam:latest

@@ -1,8 +1,12 @@
 {
     "pictures": {
         "source": {
-            "directory": "/sample",
-            "refresh": 60
+            "directory": "/sample"
+        }
+    },
+    "app": {
+        "rest": {
+            "port": 80
         }
     }
 }

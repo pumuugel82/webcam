@@ -9,7 +9,6 @@
     const app = Express();
     app.get("/", (req, res) => {res.sendFile(__dirname + "/index.html")});
     app.get("/index.html", (req, res) => {res.sendFile(__dirname + "/index.html")});
-    app.get("/jquery-3.5.1.min.js", (req, res) => {res.sendFile(__dirname + "/jquery-3.5.1.min.js")});
     app.get("/api/pictures/latest", pictures.latest);
 
     app.listen(port, () => {

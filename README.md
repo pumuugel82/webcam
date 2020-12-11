@@ -11,8 +11,12 @@ Erstellung einer Software (Backend und Frontend) zu einer Webcam.
 ## Operation
 * Die Anwendung wird in einem Docker Container betrieben, der zugleich FTP-Server und ist und Node.js ausführen kann. Momentan noch ohne FTP.
 
-## Usage
+## Launch at development
 
-    1. docker build --pull --rm -f Dockerfile -t webcam:latest
+    > npm start
 
-    2. docker run --rm -it  -p 80:80/tcp webcam:latest
+## Usage in production
+
+    > docker build --pull --rm -f Dockerfile -t webcam:latest
+
+    > docker run --rm -it  -p 80:80/tcp webcam:latest

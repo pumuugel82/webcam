@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  webcam:
+    image: webcam:latest
+    ports:
+      - "80:80"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ftpdata:/usr/src/app/src/pictures
+  ftp-server:
+    image: delfer/alpine-ftp-server
+    ports:
+      - "21:21"
+      - "21000-21010:21000-21010"
+    environment:
+      - USERS=cam1|pass123|/home/cam1
+    volumes:
+      - ftpdata:/home/cam1
+volumes:
+  ftpdata:

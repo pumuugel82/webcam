@@ -1,0 +1,12 @@
+{
+    "pictures": {
+        "source": {
+            "directory": "/pictures"
+        }
+    },
+    "app": {
+        "rest": {
+            "port": 80
+        }
+    }
+}
